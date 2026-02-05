@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ajaykumar Nakrani — Senior Android Developer • Portfolio</title>
+  <meta name="description" content="Senior Android Developer • Jetpack Compose • Kotlin • Clean Architecture — Portfolio" />
+
+  <style>
+    :root{
+      --bg:#0b0f19;
+      --card:#111827;
+      --muted:#9ca3af;
+      --text:#e5e7eb;
+      --accent:#6366f1;
+      --accent-soft:#38bdf8;
+      --glass:rgba(255,255,255,0.04);
+      --border:rgba(255,255,255,0.06);
+      --radius:14px;
+      --gap:20px;
+      --max-width:1100px;
+      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", monospace;
+      color-scheme: dark;
+    }
+
+    *{box-sizing:border-box}
+
+    html,body{
+      margin:0;
+      height:100%;
+      font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial;
+      background:linear-gradient(180deg,#070b14 0%, #0b0f19 100%);
+      color:var(--text);
+      -webkit-font-smoothing:antialiased;
+    }
+
+    a{color:var(--accent-soft);text-decoration:none}
+
+    .container{
+      max-width:var(--max-width);
+      margin:20px auto;
+      padding:20px;
+    }
+
+    .card{
+      background:linear-gradient(180deg,rgba(255,255,255,0.03),rgba(255,255,255,0.01));
+      border-radius:var(--radius);
+      padding:18px;
+      border:1px solid var(--border);
+      box-shadow:0 10px 30px rgba(0,0,0,0.6);
+    }
+
+    header{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:16px;
+      flex-wrap:wrap;
+    }
+
+    .brand{
+      display:flex;
+      gap:14px;
+      align-items:center;
+    }
+
+    .avatar{
+      width:84px;
+      height:84px;
+      border-radius:16px;
+      background:linear-gradient(135deg,#1e293b,var(--accent));
+      display:grid;
+      place-content:center;
+      font-weight:800;
+      font-size:20px;
+      color:#e0e7ff;
+      box-shadow:0 10px 32px rgba(99,102,241,0.25);
+    }
+
+    h1{margin:0;font-size:20px}
+    p.lead{margin:6px 0 0;font-size:14px;color:var(--muted)}
+
+    nav{display:flex;gap:10px}
+    nav a.btn{
+      padding:10px 14px;
+      border-radius:10px;
+      font-size:13px;
+      color:var(--muted);
+      border:1px solid var(--border);
+    }
+    nav a.btn:hover{
+      color:#fff;
+      background:rgba(99,102,241,0.08);
+      border-color:rgba(99,102,241,0.4);
+    }
+
+    .layout{
+      display:grid;
+      grid-template-columns:1fr 360px;
+      gap:var(--gap);
+      margin-top:20px;
+    }
+
+    @media (max-width:980px){
+      .layout{grid-template-columns:1fr}
+    }
+
+    .projects{display:grid;gap:16px}
+
+    .project{
+      display:flex;
+      gap:14px;
+      align-items:flex-start;
+    }
+
+    .thumb{
+      width:120px;
+      height:80px;
+      border-radius:10px;
+      background:linear-gradient(135deg,rgba(99,102,241,0.25),rgba(56,189,248,0.18));
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-family:var(--mono);
+      font-size:12px;
+      color:#e0e7ff;
+      flex-shrink:0;
+    }
+
+    .meta{font-size:13px;color:var(--muted);margin-top:6px}
+
+    .tags{
+      margin-top:10px;
+      display:flex;
+      gap:8px;
+      flex-wrap:wrap;
+    }
+
+    .tag{
+      padding:6px 10px;
+      border-radius:999px;
+      font-size:12px;
+      color:var(--muted);
+      background:rgba(99,102,241,0.08);
+      border:1px solid rgba(99,102,241,0.2);
+    }
+
+    .skills{display:flex;flex-wrap:wrap;gap:10px}
+    .skill{
+      padding:8px 12px;
+      border-radius:8px;
+      font-size:13px;
+      color:var(--muted);
+      background:rgba(255,255,255,0.03);
+      border:1px solid var(--border);
+    }
+
+    .section{margin-bottom:18px}
+    .small{font-size:13px;color:var(--muted)}
+
+    footer{
+      margin-top:28px;
+      text-align:center;
+      font-size:13px;
+      color:var(--muted);
+    }
+
+    @media (max-width:740px){
+      nav{display:none}
+      .avatar{width:64px;height:64px}
+      h1{font-size:18px}
+    }
+  </style>
+</head>
+
+<body>
+<div class="container">
+
+<header class="card">
+  <div class="brand">
+    <div class="avatar">AN</div>
+    <div>
+      <h1>Ajaykumar Nakrani — Senior Android Developer</h1>
+      <p class="lead">
+        I architect and develop scalable Android applications using Kotlin,
+        Jetpack Compose, and clean architecture while leading teams and
+        delivering products used by millions of users.
+      </p>
+    </div>
+  </div>
+
+  <nav>
+    <a class="btn" href="#projects">Projects</a>
+    <a class="btn" href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main class="layout">
+
+<section>
+  <div class="card">
+    <h2>About</h2>
+    <p class="small">
+      Senior Android Developer with over 9 years of experience architecting,
+      developing, and scaling high-usage Android applications serving millions
+      of users. My expertise includes Kotlin-first development, Jetpack Compose,
+      and Clean Architecture, with a strong emphasis on performance, modular
+      design, and long-term maintainability.
+      <br><br>
+      I drive feature development end-to-end — from technical planning and API
+      integration to production deployment and continuous optimization. I
+      actively mentor engineers, perform code reviews, define architectural
+      guidelines, and collaborate closely with cross-functional teams to deliver
+      reliable, user-focused mobile solutions.
+      <br><br>
+      My experience spans consumer applications, Android TV platforms, and
+      UAV-based systems, involving real-time media streaming, background task
+      management, and deep integration with hardware-driven SDKs. I enjoy
+      solving complex engineering problems and building Android platforms that
+      scale alongside growing products and teams.
+    </p>
+  </div>
+
+  <div class="card" id="projects" style="margin-top:18px">
+    <h2>Projects</h2>
+    <div class="projects">
+
+      <div class="project">
+  <div class="thumb">JioAICloud</div>
+  <div>
+    <h3>JioAICloud (JioCloud Drive)</h3>
+    <div class="meta">Senior Android Developer • Kotlin, Compose, Hilt</div>
+    <p class="small">
+      Designed and implemented the Events module using Clean Architecture
+      and Jetpack Compose, enabling real-time media capture, upload, and
+      sharing with a scalable and maintainable codebase.
+    </p>
+
+    <p class="small" style="margin-top:6px">
+      📱 <a href="https://play.google.com/store/apps/details?id=jio.cloud.drive" target="_blank">
+        View on Google Play
+      </a>
+    </p>
+
+    <div class="tags">
+      <span class="tag">Compose</span>
+      <span class="tag">Clean Architecture</span>
+      <span class="tag">Cloud Storage</span>
+      <span class="tag">Media Upload</span>
+    </div>
+  </div>
+</div>
+
+
+      <div class="project">
+        <div class="thumb">JioPhotos</div>
+        <div>
+          <h3>JioPhotos STB</h3>
+          <div class="meta">Senior Android Developer • Android TV</div>
+          <p class="small">
+            Developed a DLNA-based Android TV application for seamless media
+            streaming and playback, supporting smooth multi-device viewing
+            experiences.
+          </p>
+          <div class="tags">
+            <span class="tag">Android TV</span>
+            <span class="tag">Media</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="thumb">Autel SDK</div>
+        <div>
+          <h3>Autel Mobile SDK • EVO II V3 Series</h3>
+          <div class="meta">Android Developer • UAV / Drone Platform</div>
+          <p class="small">
+            Built a customizable Android application using the Autel Mobile SDK
+            for the EVO II V3 Series. Implemented autonomous flight operations,
+            camera and gimbal control, real-time video streaming, sensor data
+            access, media downloads, and smart mission execution. The
+            Android-based remote controller delivers live video streaming
+            powered by ExoPlayer.
+          </p>
+          <div class="tags">
+            <span class="tag">Autel SDK</span>
+            <span class="tag">UAV Control</span>
+            <span class="tag">ExoPlayer</span>
+            <span class="tag">Streaming</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="thumb">Al Khaleej</div>
+        <div>
+          <h3>Al Khaleej News App</h3>
+          <div class="meta">Android Developer • Kotlin, MVVM</div>
+          <p class="small">
+            Developed and published the official Al Khaleej News Android
+            application on Google Play. Implemented real-time news updates,
+            REST API integration, offline caching, and smooth category-based
+            navigation to deliver a fast and reliable reading experience.
+          </p>
+          <p class="small" style="margin-top:6px">
+            📱 <a href="https://play.google.com/store/apps/details?id=com.akhbar.alkhaleej" target="_blank">
+              View on Google Play
+            </a>
+          </p>
+          <div class="tags">
+            <span class="tag">News App</span>
+            <span class="tag">MVVM</span>
+            <span class="tag">Offline Cache</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="thumb">Gallery Pro</div>
+        <div>
+          <h3>Gallery Pro • Photo & Video Gallery</h3>
+          <div class="meta">Android Developer • Kotlin, MVVM</div>
+          <p class="small">
+            Developed and published the Gallery Pro Android application,
+            delivering a fast and intuitive photo and video browsing
+            experience. Focused on efficient local media loading, album
+            organization, category filtering, and smooth gesture-based
+            interactions for managing media content.
+          </p>
+          <p class="small" style="margin-top:6px">
+            📱 <a href="https://play.google.com/store/apps/details?id=com.gallery.photo.gallerypro" target="_blank">
+              View on Google Play
+            </a>
+          </p>
+          <div class="tags">
+            <span class="tag">Media Gallery</span>
+            <span class="tag">Performance</span>
+            <span class="tag">Kotlin</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<aside>
+
+  <div class="card section">
+    <h3>Skills</h3>
+    <div class="skills">
+	  <span class="skill">Kotlin</span>
+	  <span class="skill">Java</span>
+	  <span class="skill">Jetpack Compose</span>
+	  <span class="skill">Hilt / Dagger</span>
+	  <span class="skill">MVVM Clean Architecture</span>
+	  <span class="skill">Paging 3</span>
+	  <span class="skill">Coroutines & Flow</span>
+	  <span class="skill">ExoPlayer</span>
+	  <span class="skill">Android MediaPlayer</span>
+	  <span class="skill">TensorFlow lite</span>
+	  <span class="skill">Firebase</span>
+	  <span class="skill">Room/Sqlite Database</span>
+	  <span class="skill">Google Map</span>
+	  <span class="skill">GitHub</span>
+	  
+	</div>
+  </div>
+
+  <div class="card section" id="contact">
+    <h3>Contact</h3>
+    <div class="small">📞 <a href="tel:+919714000521">+91 9714000521</a></div>
+    <div class="small">✉️ <a href="mailto:ajay2012aju@gmail.com">ajay2012aju@gmail.com</a></div>
+    <div class="small">🔗 <a href="https://www.linkedin.com/in/ajay-nakrani-780b66119/" target="_blank">LinkedIn</a></div>
+  </div>
+
+</aside>
+
+</main>
+
+<footer>
+  © 2026 Ajaykumar Nakrani • Senior Android Developer
+</footer>
+
+</div>
+</body>
+</html>
